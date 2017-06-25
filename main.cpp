@@ -1,11 +1,11 @@
 #include <iostream>
-#include "exemplos.h"
+#include "for.h"
 
 using namespace std;
 
 void executarMetodos(){
-    Exemplos ex;
-    ex.mediaSalario();
+    For f;
+    f.mediaSalario();
 }
 
 int main()

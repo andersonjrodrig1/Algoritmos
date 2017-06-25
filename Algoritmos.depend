@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1498419337 source:d:\code blocks\c++\algoritmos\for.cpp
+	"for.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1498419304 d:\code blocks\c++\algoritmos\for.h
+
+1498419346 source:d:\code blocks\c++\algoritmos\main.cpp
+	<iostream>
+	"for.h"
+
