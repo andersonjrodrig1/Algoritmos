@@ -1,2 +1,2 @@
 # Algoritmos
-Algoritmos com a Estrutura de Repetição For
+Algoritmos com as Estruturas de Repetição e outras estruturas
