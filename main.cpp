@@ -3,12 +3,17 @@
 
 using namespace std;
 
-void executarMetodos(){
+void executarMetodosSwitch(){
+    Switch s;
+    s.calculadora();
+}
+
+void executarMetodosFor(){
     For f;
     f.mediaSalario();
 }
 
 int main()
 {
-    executarMetodos();
+    executarMetodosFor();
 }
