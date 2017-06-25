@@ -1,2 +1,2 @@
-# Algoritmos-Estrutura-For
+# Algoritmos
 Algoritmos com a Estrutura de Repetição For
