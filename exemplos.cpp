@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-//exercicio 88
+/* Exercicio 88
+Some os números de 1 a 100 e imprima o valor.*/
 void Exemplos::somaNumeros(){
     int soma;
 
@@ -14,7 +15,10 @@ void Exemplos::somaNumeros(){
     printf("A soma e %i", soma);
 }
 
-//exercicio 89
+/* Exercicio 89
+Construa um Algoritmo que, para um grupo de 50 valores inteiros, determine:
+a) A soma dos números positivos;
+b) A quantidade de valores negativos; */
 void Exemplos::grupoValores(){
     int valores[50] = {
         1,2,-2,10,38,9,-22,99,-99,20,-35,-40,-9,
@@ -38,7 +42,8 @@ void Exemplos::grupoValores(){
     printf("\nQuantidade de Negativos: %i\n", qtdNegativos);
 }
 
-//exercicio 90
+/* Exercicio 90
+Faça um algoritmo que imprima os múltiplos positivos de 7, inferiores a 1000. */
 void Exemplos::multiplosSete(){
     const int MAX = 1000;
 
@@ -49,7 +54,9 @@ void Exemplos::multiplosSete(){
     }
 }
 
-//exercicio 91
+/* Exercicio 91
+Faça um algoritmo que imprima todos os números pares compreendidos entre
+85 e 907. O algoritmo deve também calcular a soma destes valores. */
 void Exemplos::imprimePares(){
     const int MAX = 907;
 
@@ -60,7 +67,10 @@ void Exemplos::imprimePares(){
     }
 }
 
-//exercicio 92
+/* Exercicio 92
+Faça um algoritmo que calcule o valor de A, dado por:
+A = N + (N-1)/2 + (N-2)/3 + ... + 1/N,
+onde N é um número inteiro positivo. */
 void Exemplos::calculoValor(){
     int n = 0, div = 1;
     float a = 0;
@@ -76,7 +86,13 @@ void Exemplos::calculoValor(){
     printf("\nValor de A: %.0f\n", a);
 }
 
-//exercicio 93
+/* Exercicio 93
+Uma rainha requisitou os serviços de um monge e disse-lhe que pagaria
+qualquer preço. O monge, necessitando de alimentos, indagou à rainha sobre o
+pagamento, se poderia ser feito com grãos de trigo dispostos em um tabuleiro de
+xadrez (que possui 64 casas), de tal forma que o primeiro quadro deveria conter
+apenas um grão e os quadros subsequentes, o dobro do quadro anterior. Crie um
+algoritmo para calcular o total de grãos que o monge recebeu. */
 void Exemplos::tabuleiro(){
     const int TAB = 64;
     long graos = 1;
@@ -140,7 +156,15 @@ int quintaInstrucao(){
     resto = valorA % valorB;
 }
 
-//exercicio 94
+/* Exercicio 94
+Dado o conjunto de instruções a seguir, faça um algoritmo com quatro variações,
+colocando o comando de repetição adequadamente, de forma a:
+a) Executar o conjunto 10 vezes;
+b) Não executar nenhuma vez;
+c) Executar o conjunto 100 vezes utilizando duas estruturas de repetição;
+d) Executar N vezes, onde N é uma variável informada pelo usuário.
+- Ler A, B
+- Modulo = A mod B (calcula o resto da divisão) */
 void Exemplos::conjuntoInstrucoes(){
     int mUm = primeiraInstrucao();
     int mDois = segundaInstrucao();
@@ -155,7 +179,10 @@ void Exemplos::conjuntoInstrucoes(){
     printf("\n5 instrucao: %i\n", mCinco);
 }
 
-//exercicio 95
+/* Exercicio 95
+Para uma turma de 45 alunos, construa um algoritmo que determine:
+a) A idade média dos alunos com menos de 1,70m de altura;
+b) A altura média dos alunos com mais de 20 anos. */
 void Exemplos::mediaTurma(){
     const int TURMA = 10;
     int contAltura = 0, contIdade = 0;
@@ -185,7 +212,9 @@ void Exemplos::mediaTurma(){
     printf("\nA media de altura de %i aluno(s) com altura menor que 1,72: %.2f\n", contAltura, mediaAltura);
 }
 
-//exercicio 96
+/* Exercicio 96
+Escreva um algoritmo que calcule o produto dos inteiros ímpares de 1 a 15 e,
+então, exiba os resultados. */
 void Exemplos::produtoImpares(){
     const int MAX = 15;
     int produto = 1;
@@ -199,7 +228,8 @@ void Exemplos::produtoImpares(){
     printf("O produto dos impares entre 1 e %i: %i\n", MAX, produto);
 }
 
-//exercicio 97
+/* exercicio 97
+Faça um algoritmo que leia um número e imprima a sua tabela de multiplicação de 1 até 13. */
 void Exemplos::tabelaNumero(){
     const int MAX = 13;
     int numero, produto;
@@ -212,7 +242,9 @@ void Exemplos::tabelaNumero(){
     }
 }
 
-//exercicio 98
+/* exercicio 98
+Escreva um algoritmo que calcule os quadrados e cubos dos números de 0 a 10
+e imprima os valores resultantes no formato de tabela. */
 void Exemplos::quadradoCubo(){
     const int MAX = 10;
 
@@ -221,4 +253,39 @@ void Exemplos::quadradoCubo(){
     for(int i = 1; i <= MAX; i++){
         printf("\n%i\t\t%.0f\t\t%.0f", i, pow(i,2), pow(i,3));
     }
+}
+
+/* Exercicio 99
+Faça um algoritmo que calcule a média de salários de uma empresa, pedindo ao
+usuário a quantidade de funcionários, o nome e o salário de cada funcionário e
+devolvendo a média, o salário mais alto e o salário mais baixo.*/
+void Exemplos::mediaSalario(){
+    const float SALARIO = 3000.00;
+    int qtdFuncionarios, contSalAlto = 0, contSalBaixo = 0;
+    char nome[30];
+    float mediaSalAltos, mediaSalBaixos = 0, salAlto = 0, salBaixo, salario;
+
+    printf("Informe a quantidade de funcionarios: ");
+    scanf("%i", &qtdFuncionarios);
+
+    for(int i = 1; i <= qtdFuncionarios; i++){
+        printf("\nNome do Funcionario %i: ", i);
+        scanf("%s", &nome);
+        printf("Informe o salario: ");
+        scanf("%f", &salario);
+
+        if(salario >= SALARIO){
+            salAlto += salario;
+            contSalAlto++;
+        }else{
+            salBaixo += salario;
+            contSalBaixo++;
+        }
+    }
+
+    mediaSalAltos = salAlto / contSalAlto;
+    mediaSalBaixos = salBaixo / contSalBaixo;
+
+    printf("\nMedia salarios mais altos: %.2f", mediaSalAltos);
+    printf("\nMedia salarios mais baixos: %.2f\n", mediaSalBaixos);
 }

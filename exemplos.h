@@ -15,6 +15,7 @@ class Exemplos{
         void produtoImpares();
         void tabelaNumero();
         void quadradoCubo();
+        void mediaSalario();
 };
 
 #endif // EXEMPLOS_H_INCLUDED

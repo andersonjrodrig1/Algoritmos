@@ -5,7 +5,7 @@ using namespace std;
 
 void executarMetodos(){
     Exemplos ex;
-    ex.quadradoCubo();
+    ex.mediaSalario();
 }
 
 int main()
