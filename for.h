@@ -16,6 +16,7 @@ class For{
         void tabelaNumero();
         void quadradoCubo();
         void mediaSalario();
+        void mediaMaiorMenor();
 };
 
 #endif // EXEMPLOS_H_INCLUDED

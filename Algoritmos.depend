@@ -11,3 +11,22 @@
 	<iostream>
 	"for.h"
 
+1498535749 source:d:\code blocks\c++\algoritmos\if.cpp
+	"If.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1498534131 d:\code blocks\c++\algoritmos\if.h
+
+1498421189 source:d:\code blocks\c++\algoritmos\switch.cpp
+	"switch.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<time.h>
+
+1498535981 d:\code blocks\c++\algoritmos\switch.h
+

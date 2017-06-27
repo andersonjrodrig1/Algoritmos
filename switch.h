@@ -2,6 +2,7 @@
 #define EXEMPLOS_H_INCLUDED
 
 class Switch {
+
     public:
         void clubeFutebol();
         void menuOperacoes();

@@ -33,9 +33,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="If.h" />
 		<Unit filename="for.cpp" />
 		<Unit filename="for.h" />
+		<Unit filename="if.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="switch.cpp" />
+		<Unit filename="switch.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

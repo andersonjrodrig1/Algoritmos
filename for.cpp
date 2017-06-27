@@ -289,3 +289,37 @@ void For::mediaSalario(){
     printf("\nMedia salarios mais altos: %.2f", mediaSalAltos);
     printf("\nMedia salarios mais baixos: %.2f\n", mediaSalBaixos);
 }
+
+/* Exercicio 100
+Crie um programa que peça 10 números inteiros e apresente: a média, o maior e o menor. */
+void For::mediaMaiorMenor(){
+    const int MAX = 10;
+    float media, soma = 0;
+    int maior, menor, numero;
+
+    for(int i = 0; i < MAX; i++){
+        printf("Informe o %i numero: ", i +1);
+        scanf("%i", &numero);
+
+        soma += numero;
+
+        if(i == 0){
+            maior = numero;
+            menor = numero;
+        }
+
+        if(numero < menor){
+            menor = numero;
+        }
+
+        if(numero > maior){
+            maior = numero;
+        }
+    }
+
+    media = soma / MAX;
+
+    printf("\nMedios dos numeros digitados: %.2f", media);
+    printf("\nMaior numero: %i", maior);
+    printf("\nMenor numero: %i\n", menor);
+}
