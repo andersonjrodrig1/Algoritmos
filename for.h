@@ -17,6 +17,11 @@ class For{
         void quadradoCubo();
         void mediaSalario();
         void mediaMaiorMenor();
+        void fatorialNumero();
+        void contaHotel();
+        void perdaMassa();
+        void multiplicarSemMultiplicacao();
+        void Fibonacci();
 };
 
 #endif // EXEMPLOS_H_INCLUDED

@@ -323,3 +323,118 @@ void For::mediaMaiorMenor(){
     printf("\nMaior numero: %i", maior);
     printf("\nMenor numero: %i\n", menor);
 }
+
+/* Exercicio 101
+Escreva um algoritmo que determine o fatorial de um número. Para este
+problema, tem-se como entrada o valor do número do qual se deseja calcular o
+fatorial. O fatorial de 0 é igual a 1. O fatorial de um número N(N!) é definido
+conforme a seguir:
+N! = 1 * 2 * 3 * 4 * ... * (N-1) * N */
+void For::fatorialNumero(){
+    int numero, fat = 1;
+
+    printf("Informe um numero: ");
+    scanf("%i", &numero);
+
+    if(numero != 0){
+        for(int i = 1; i <= numero; i++){
+            fat *= i;
+        }
+    }
+
+    printf("\nFatorial de %i: %li\n", numero, fat);
+}
+
+/*Exercicio 102
+102. Um hotel com 30 quartos cobra R$ 50,00 por diária e mais uma taxa de
+serviços. A taxa de serviços é de:
+• R$ 4,00 por diária, se o número de diárias for < 15;
+• R$ 3,60 por diária, se o número de diárias for = 15;
+• R$ 3,00 por diária, se o número de diárias for > 15.
+Faça um algoritmo que imprima o nome e o total da conta de cada cliente do hotel.
+Imprima também o total ganho pelo hotel. */
+void For::contaHotel(){
+    const float VALOR = 50.00;
+    char nome[30];
+    int diarias;
+    float totalConta = 0, totalDiarias = 0;
+
+    printf("Informe o nome do cliente: ");
+    gets(nome);
+    printf("Informe a quantidades de diarias: ");
+    scanf("%i", diarias);
+
+    if(diarias < 15){
+        totalDiarias = diarias * 4.00;
+    }else if(diarias == 15){
+        totalDiarias = diarias * 3.60;
+    }else{
+        totalDiarias = diarias * 3.00;
+    }
+
+    totalConta = diarias * VALOR;
+    totalConta += totalDiarias;
+
+    printf("\nNome cliente: %s", nome);
+    printf("\nTotal da conta: %.2f\n", totalConta);
+}
+
+/* Exercicio 103
+Um determinado material radioativo perde metade de sua massa a cada 50
+segundos. Dada a massa inicial, em gramas, faça um programa que determine o
+tempo necessário para que essa massa se torne menor que 0,05 gramas. */
+void For::perdaMassa(){
+    const float MIN_MASSA = 0.05;
+    float massa;
+    int tempo = 0, minuto, segundo;
+    char strMin[2], strSeg[2];
+
+    printf("Informe a massa do material radioativo em gramas: ");
+    scanf("%f", &massa);
+
+    while(massa > MIN_MASSA){
+        massa /= 2;
+        tempo += 50;
+    }
+
+    minuto = tempo / 60;
+    segundo = tempo % 60;
+
+    printf("\nTempo que massa tornou menor que %.2f: %i:%i minutos.\n", MIN_MASSA, minuto, segundo);
+}
+
+/* Exercicio 104
+Sem utilizar a operação de multiplicação, escreva um programa que multiplique
+dois números inteiros. Por exemplo: 2 * 2 = 2 + 2. */
+void For::multiplicarSemMultiplicacao(){
+    int result = 0, num1, num2;
+
+    printf("Informe o primeiro numero: ");
+    scanf("%i", &num1);
+    printf("Informe o segundo numero: ");
+    scanf("%i", &num2);
+
+    for(int i = 0; i < num1; i++){
+        result += num2;
+    }
+
+    printf("\nResultado: %i\n", result);
+}
+
+/* Exercicio 105
+A série de Fibonacci é formada pela sequência:
+0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+Construa um algoritmo que gere e mostre a série até o vigésimo termo. */
+void For::Fibonacci(){
+    int numero, a = 0, b = 1, c = 0;
+
+    printf("Informe um numero: ");
+    scanf("%i", &numero);
+
+    for(int i = 0; i < numero; i++){
+        printf("%i ", c);
+        c = b + a;
+        a = b;
+        b = c;
+    }
+}

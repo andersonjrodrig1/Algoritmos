@@ -7,7 +7,7 @@ using namespace std;
 
 void executarMetodosFor(){
     For f;
-    f.mediaMaiorMenor();
+    f.Fibonacci();
 }
 
 void executarMetodosIf(){
