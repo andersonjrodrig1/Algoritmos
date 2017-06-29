@@ -2,8 +2,19 @@
 #include "for.h"
 #include "switch.h"
 #include "if.h"
+#include "while.h"
 
 using namespace std;
+
+void executarMetodosWhile(){
+    While w;
+    w.quocienteResto();
+}
+
+void executarMetodosSwitch(){
+    //Switch sw;
+    //sw.calculadora();
+}
 
 void executarMetodosFor(){
     For f;
@@ -17,5 +28,5 @@ void executarMetodosIf(){
 
 int main()
 {
-    executarMetodosFor();
+    executarMetodosWhile();
 }

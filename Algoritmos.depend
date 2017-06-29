@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1498623687 source:d:\code blocks\c++\algoritmos\for.cpp
+1498626477 source:d:\code blocks\c++\algoritmos\for.cpp
 	"for.h"
 	<stdio.h>
 	<stdlib.h>
@@ -7,11 +7,12 @@
 
 1498622974 d:\code blocks\c++\algoritmos\for.h
 
-1498623293 source:d:\code blocks\c++\algoritmos\main.cpp
+1498705247 source:d:\code blocks\c++\algoritmos\main.cpp
 	<iostream>
 	"for.h"
 	"switch.h"
 	"if.h"
+	"while.h"
 
 1498535749 source:d:\code blocks\c++\algoritmos\if.cpp
 	"If.h"
@@ -31,4 +32,11 @@
 	<time.h>
 
 1498535981 d:\code blocks\c++\algoritmos\switch.h
+
+1498705992 source:d:\code blocks\c++\algoritmos\while.cpp
+	"while.h"
+	<stdlib.h>
+	<stdio.h>
+
+1498704185 d:\code blocks\c++\algoritmos\while.h
 
