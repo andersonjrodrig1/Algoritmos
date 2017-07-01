@@ -6,6 +6,10 @@ class While{
         void conjuntoNumeros();
         void conjuntoNumerosMaior();
         void quocienteResto();
+        void quantidadeParImpar();
+        int calculaInteiros();
+        void refeitorioUniversidade();
+        void progressaoMatematica();
 };
 
 #endif // WHILE_H_INCLUDED
