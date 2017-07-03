@@ -10,6 +10,9 @@ class While{
         int calculaInteiros();
         void refeitorioUniversidade();
         void progressaoMatematica();
+        void pesoAlturaPessoas();
+        void hotelFazenda();
+        void salariosEmpresa();
 };
 
 #endif // WHILE_H_INCLUDED

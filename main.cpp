@@ -8,7 +8,7 @@ using namespace std;
 
 void executarMetodosWhile(){
     While w;
-    w.progressaoMatematica();
+    w.salariosEmpresa();
 }
 
 void executarMetodosSwitch(){
