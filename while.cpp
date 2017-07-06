@@ -334,3 +334,188 @@ void While::salariosEmpresa(){
     cout << "Maior salario: " << maiorSalario << endl;
     cout << "Menor salario: " << menorSalario << endl;
 }
+
+/*
+Exercicio 116
+Faça um algoritmo que leia um número e divida-o por dois (sucessivamente)
+ate que o resultado seja menor que 1. Mostre o resultado da ultima divisão e a
+quantidade de divisões efetuadas.
+*/
+void While::divisaoNumero(){
+    int cont = 0;
+    float numero;
+
+    cout << "Informe um numero: ";
+    cin >> numero;
+
+    while(numero > 1){
+        numero /= 2;
+        cont++;
+    }
+
+    cout << "\nResultado: " << numero << endl;
+    cout << "Quantidade divisoes: " << cont << endl;
+}
+
+/*
+Exercicio 117
+Escrever um algoritmo que lê um valor N inteiro e positivo e que calcula e escreve o valor de E.
+E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / N!
+*/
+void While::numeroInteiroPositivo(){
+    int numero, e = 1, cont = 1, prod = 1;
+
+    cout << "Digite um numero: ";
+    cin >> numero;
+
+    while(cont <= numero){
+        for(int i = 1; i <= cont; i++){
+            prod *= i;
+        }
+
+        e = e + prod + 1;
+        cont++;
+    }
+
+    cout << "\nValor de E: " << e << endl;
+}
+
+/*
+Exercicio 118
+Chico tem 1,50 metros e cresce 2 centímetros por ano, enquanto Zé tem 1,10
+metros e cresce 3 centímetros por ano. Construa um algoritmo que calcule e
+imprima quantos anos serão necessários para que Zé seja maior que Chico.
+*/
+void While::tempoCrescimento(){
+    const float CHICO = 1.50;
+    const float ZE = 1.10;
+    float alturaChico = CHICO, alturaZe = ZE;
+    int qtdTempo = 0;
+
+    while(alturaZe < alturaChico){
+        alturaChico += 0.02;
+        alturaZe += 0.03;
+        qtdTempo++;
+    }
+
+    cout << "Altura de Chico: " << CHICO << endl;
+    cout << "Altura de Ze: " << ZE << endl;
+    cout << "\nZe levara " << qtdTempo << " ano(s) para ficar mais alto que Chico." << endl;
+}
+
+/*
+Exercicio 119
+Escreva um algoritmo que leia um número n (número de termos de uma
+progressão aritmética), a1 (o primeiro termo da progressão) e r (a razão da
+progressão) e escreva os n termos desta progressão, bem como a soma dos
+elementos.
+*/
+void While::progressaoAritmetica(){
+    int n, a, r, soma = 0;
+
+    cout << "Informe quantidade de termos da progressao: ";
+    cin >> n;
+    cout << "Informe o primeiro termo da progressao: ";
+    cin >> a;
+    cout << "Informe a razao da progressao: ";
+    cin >> r;
+
+    while(n > 0){
+        soma += a;
+        a += r;
+        n--;
+    }
+
+    cout << "\nA soma da progresao aritmetica: " << soma << endl;
+}
+
+/*
+Exercicio 120
+Foi feita uma pesquisa entre os habitantes de uma região. Foram coletados os
+dados de idade, sexo (M/F) e salário. Faça um algoritmo que informe:
+a) a média de salário do grupo;
+b) a maior e a menor idade do grupo;
+c) a quantidade de mulheres com salário até R$100,00.
+Encerre a entrada de dados quando for digitada uma idade negativa.
+*/
+void While::idadeHabitantes(){
+    int idade = 0, maiorIdade = 0, menorIdade = 9999, qtdMulheres = 0, cont = 0;
+    char sexo[1];
+    float salario, somaSalario = 0;
+
+    while(idade >= 0){
+        if(idade >= 0){
+            cout << "\nInforme a idade: ";
+            cin >> idade;
+            cout << "Informe o sexo: ";
+            cin >> sexo;
+            cout << "Informe o salario: ";
+            cin >> salario;
+
+            if(salario > maiorIdade){
+                maiorIdade = salario;
+            }
+
+            if(salario < menorIdade){
+                menorIdade = salario;
+            }
+
+            if(strcasecmp(sexo, "F") == 0 && salario <= 100){
+                qtdMulheres++;
+            }
+        }
+    }
+
+    float mediaSalario = somaSalario / cont;
+
+    cout << "\nMedia salario R$" << mediaSalario << endl;
+    cout << "Maior idade: " << maiorIdade << endl;
+    cout << "Menor idade: " << menorIdade << endl;
+    cout << "Quantidade de mulheres com salario ate R$100: " << mediaSalario << endl;
+}
+
+/*
+Exercicio 121
+Faça um algoritmo que leia um número inteiro N, calcule e mostre o maior quadrado menor ou igual a N.
+Por exemplo, se N for igual a 38, o Menor quadrado é 36 (quadrado de 6).
+*/
+void While::menorQuadrado(){
+    int numero;
+    float quadrado, resto;
+
+    cout << "Informe um numero: ";
+    cin >> numero;
+
+    do{
+        quadrado = sqrt(numero);
+        resto = quadrado - (int)quadrado;
+        numero--;
+    }while(resto > 0);
+
+    cout << "\nMenor quadrado: " << (int)quadrado << endl;
+}
+
+/*
+Exercicio 122
+Faça um algoritmo que leia um número FN, calcule e mostre os N primeiros
+termos da sequência de Fibonnaci (0, 1, 1, 2 , 3, 5, 8, ...). O valor lido para N sempre será maior ou igual a 2.
+*/
+void While::sequenciaFibonacci(){
+    int fa, a = 0, b = 1, c = 0;
+
+    do{
+        cout << "\nInforme um numero: ";
+        cin >> fa;
+
+        if(fa < 2)
+            cout << "\nNumero invalido..." << endl;
+    }while(fa < 2);
+
+    while(fa > 0){
+        cout << c << " ";
+        a = c;
+        c = a + b;
+        b = a;
+        fa--;
+    }
+}

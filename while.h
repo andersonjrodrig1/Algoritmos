@@ -13,6 +13,13 @@ class While{
         void pesoAlturaPessoas();
         void hotelFazenda();
         void salariosEmpresa();
+        void divisaoNumero();
+        void numeroInteiroPositivo();
+        void tempoCrescimento();
+        void progressaoAritmetica();
+        void idadeHabitantes();
+        void menorQuadrado();
+        void sequenciaFibonacci();
 };
 
 #endif // WHILE_H_INCLUDED
