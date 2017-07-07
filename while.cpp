@@ -618,6 +618,7 @@ void While::andaresPredio(){
 
         if(qtdPessoas > LIMITE){
             devemDescer = qtdPessoas - LIMITE;
+            qtdPessoas -= devemDescer;
             cout << "EXCESSO DE PASSAGEIROS. DEVEM SAIR: " << devemDescer << endl;
         }
 
