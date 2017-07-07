@@ -8,7 +8,7 @@ using namespace std;
 
 void executarMetodosWhile(){
     While w;
-    w.sequenciaFibonacci();
+    w.andaresPredio();
 }
 
 void executarMetodosSwitch(){

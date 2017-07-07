@@ -8,10 +8,8 @@
 using namespace std;
 
 /*
-Exercicio 106
 Faça um algoritmo que leia um conjunto de números (X) e imprima sua soma
-(Soma) e sua média (Media). Admita que o valor 9999 é utilizado como sentinela
-para fim de leitura.
+(Soma) e sua média (Media). Admita que o valor 9999 é utilizado como sentinela para fim de leitura.
 Ex.: 1, 2, 3 => Soma=6 Media=2
 */
 void While::conjuntoNumeros(){
@@ -38,9 +36,8 @@ void While::conjuntoNumeros(){
 }
 
 /*
-Exercicio 107
-Faça um algoritmo que leia um conjunto de dados numéricos (X) e imprima o
-maior (Maximo) dentre eles. Admita que o valor 9999 é utilizado como sentinela.
+Faça um algoritmo que leia um conjunto de dados numéricos (X) e imprima o maior (Maximo) dentre eles.
+Admita que o valor 9999 é utilizado como sentinela.
 Ex.: 1, 2, 3 => Maior=3
 */
 void While::conjuntoNumerosMaior(){
@@ -64,10 +61,8 @@ void While::conjuntoNumerosMaior(){
 }
 
 /*
-Exercicio 108
 Faça um algoritmo que leia dois números inteiros positivos (Num1 e Num2) e
-imprima o quociente (Quoc) e o resto (Resto) da divisão de Num1 por Num2,
-utilizando apenas as operações de adição e subtração.
+imprima o quociente (Quoc) e o resto (Resto) da divisão de Num1 por Num2, utilizando apenas as operações de adição e subtração.
 Ex.: N1=10; N2=2 => Q=5 R=0
 */
 void While::quocienteResto(){
@@ -88,7 +83,6 @@ void While::quocienteResto(){
 }
 
 /*
-Exercicio 109
 Faça um algoritmo que leia um conjunto de números (X) e imprima a
 quantidade de números pares (QPares) e a quantidade de números impares
 (QImpares) lidos. Admita que o valor 9999 é utilizado como sentinela para fim de leitura.
@@ -116,7 +110,6 @@ void While::quantidadeParImpar(){
     printf("\nQuantidade Par: %i\nQuantidade Impar: %i\n", qtdPar, qtdImpar);
 }
 /*
-Exercicio 110
 Faça um algoritmo que calcule e imprime a soma dos inteiros de 1 a 10. Utilize
 as estruturas ENQUANTO-FACA / REPITA-FACA para fazer um laço com as
 instruções de cálculo e incremento. O laço deve terminar quando o valor de x se tornar 11.
@@ -133,7 +126,6 @@ int While::calculaInteiros(){
 }
 
 /*
-Exercicio 111
 Foi feita uma pesquisa com um grupo de alunos de uma universidade, na qual
 se perguntou para cada aluno o número de vezes que utilizou o restaurante da
 universidade no último mês. Construa um algoritmo que determine:
@@ -174,11 +166,9 @@ void While::refeitorioUniversidade(){
 }
 
 /*
-Exercicio 112
 Construa um algoritmo que, para a progressão geométrica 3; 9; 27; 81; ...;
 6561, determine a soma de seus termos. Construa o algoritmo de maneira a não
-utilizar a fórmula de soma dos termos. Faça com que o computador gere cada
-um dos termos a ser somado.
+utilizar a fórmula de soma dos termos. Faça com que o computador gere cada um dos termos a ser somado.
 Ex.: 3; 9; 27; 81; 243; 729; 2187; 6561 => 9840
 */
 void While::progressaoMatematica(){
@@ -199,7 +189,6 @@ void While::progressaoMatematica(){
 }
 
 /*
-Exercicio 113
 Crie um algoritmo que peça o nome, a altura e o peso de duas pessoas e
 apresente o nome e peso da mais pesada e o nome e altura da mais alta.
 */
@@ -236,16 +225,13 @@ void While::pesoAlturaPessoas(){
 }
 
 /*
-Exercicio 114
 Considere que, para cada um dos hotéis fazenda da região, se tenha registrado
 o nome do hotel, a sua distância do centro da cidade, o número médio de
 visitantes no último feriado e o tipo de acesso ao hotel (0– acesso não asfaltado; 1– acesso asfaltado).
 Construa um algoritmo que forneça:
 a) O número de hoteis que distam mais de 15km do centro;
-b) A quantidade média de visitantes no último feriado, nos hoteis com acesso
-não asfaltado;
-c) O nome e a distância do centro em Km, de todos os hoteis de acesso
-asfaltado que tiveram menos de 1.000 visitantes.
+b) A quantidade média de visitantes no último feriado, nos hoteis com acesso não asfaltado;
+c) O nome e a distância do centro em Km, de todos os hoteis de acesso asfaltado que tiveram menos de 1.000 visitantes.
 */
 void While::hotelFazenda(){
     int qtdHoteis = 0;
@@ -293,7 +279,6 @@ void While::hotelFazenda(){
 }
 
 /*
-Exercicio 115
 Faça um algoritmo que calcule a média de salários de uma empresa, pedindo
 ao usuário o nome dos funcionários e os salários e devolvendo a média, o salário
 mais alto e o salário mais baixo. Use nome = “fim” para encerrar a leitura.
@@ -336,7 +321,6 @@ void While::salariosEmpresa(){
 }
 
 /*
-Exercicio 116
 Faça um algoritmo que leia um número e divida-o por dois (sucessivamente)
 ate que o resultado seja menor que 1. Mostre o resultado da ultima divisão e a
 quantidade de divisões efetuadas.
@@ -358,7 +342,6 @@ void While::divisaoNumero(){
 }
 
 /*
-Exercicio 117
 Escrever um algoritmo que lê um valor N inteiro e positivo e que calcula e escreve o valor de E.
 E = 1 + 1 / 1! + 1 / 2! + 1 / 3! + 1 / N!
 */
@@ -381,7 +364,6 @@ void While::numeroInteiroPositivo(){
 }
 
 /*
-Exercicio 118
 Chico tem 1,50 metros e cresce 2 centímetros por ano, enquanto Zé tem 1,10
 metros e cresce 3 centímetros por ano. Construa um algoritmo que calcule e
 imprima quantos anos serão necessários para que Zé seja maior que Chico.
@@ -404,7 +386,6 @@ void While::tempoCrescimento(){
 }
 
 /*
-Exercicio 119
 Escreva um algoritmo que leia um número n (número de termos de uma
 progressão aritmética), a1 (o primeiro termo da progressão) e r (a razão da
 progressão) e escreva os n termos desta progressão, bem como a soma dos
@@ -430,7 +411,6 @@ void While::progressaoAritmetica(){
 }
 
 /*
-Exercicio 120
 Foi feita uma pesquisa entre os habitantes de uma região. Foram coletados os
 dados de idade, sexo (M/F) e salário. Faça um algoritmo que informe:
 a) a média de salário do grupo;
@@ -475,7 +455,6 @@ void While::idadeHabitantes(){
 }
 
 /*
-Exercicio 121
 Faça um algoritmo que leia um número inteiro N, calcule e mostre o maior quadrado menor ou igual a N.
 Por exemplo, se N for igual a 38, o Menor quadrado é 36 (quadrado de 6).
 */
@@ -496,20 +475,19 @@ void While::menorQuadrado(){
 }
 
 /*
-Exercicio 122
 Faça um algoritmo que leia um número FN, calcule e mostre os N primeiros
 termos da sequência de Fibonnaci (0, 1, 1, 2 , 3, 5, 8, ...). O valor lido para N sempre será maior ou igual a 2.
 */
 void While::sequenciaFibonacci(){
     int fa, a = 0, b = 1, c = 0;
 
-    do{
-        cout << "\nInforme um numero: ";
-        cin >> fa;
+    cout << "\nInforme um numero: ";
+    cin >> fa;
 
-        if(fa < 2)
-            cout << "\nNumero invalido..." << endl;
-    }while(fa < 2);
+    if(fa < 2){
+        cout << "\nNumero invalido..." << endl;
+        exit(0);
+    }
 
     while(fa > 0){
         cout << c << " ";
@@ -518,4 +496,133 @@ void While::sequenciaFibonacci(){
         b = a;
         fa--;
     }
+}
+
+/*
+Foi realizada uma pesquisa de algumas características físicas da população de uma certa região,
+a qual coletaram os seguintes dados referentes a cada habitante para serem analisados:
+- sexo (masculino e feminino)
+- cor dos olhos (azuis, verdes ou castanhos)
+- cor dos cabelos (louros, castanhos, pretos)
+- idade
+Faça um algoritmo que determine e escreva:
+a) a maior idade dos habitantes;
+b) a quantidade de indivíduos do sexo feminino cuja idade está entre 18 e 35 anos, inclusive;
+c) a quantidade de indivíduos que tenham olhos verdes e cabelos louros;
+O final do conjunto de habitantes é reconhecido pelo valor -1 informado como idade.
+*/
+void While::pesquisaPopulacional(){
+    char sexo, olhos, cabelos;
+    int idade, maiorIdade = 0, qtdSexoIdade = 0, qtdOlhosCabelos = 0;
+
+    cout << "Sexo: M- Masculino | F- Feminino" << endl;
+    cout << "Cor de Olhos: A- Azuis | V- Verdes | C- Castanhos" << endl;
+    cout << "Cor de Cabelos: L- Louros | C- Castanhos | P- Pretos" << endl;
+
+    while(idade != -1){
+        cout << "\nInforme o sexo: ";
+        cin >> sexo;
+        cout << "Informe a cor dos olhos: ";
+        cin >> olhos;
+        cout << "Informe a cor dos cabelos: ";
+        cin >> cabelos;
+        cout << "Informe a idade: ";
+        cin >> idade;
+
+        if(idade > maiorIdade){
+            maiorIdade = idade;
+        }
+
+        if(sexo == 'f' && idade >= 18 && idade < 36){
+            qtdSexoIdade++;
+        }
+
+        if(olhos == 'v' && cabelos == 'l'){
+            qtdOlhosCabelos++;
+        }
+    }
+
+    cout << "\nMaior idade: " << maiorIdade << endl;
+    cout << "Individuos do sexo feminino entre 18 e 35 anos: " << qtdSexoIdade << endl;
+    cout << "Quantidade de individuos que tenha olhos verdes e cabelos louros: " << qtdOlhosCabelos << endl;
+}
+
+/*
+Faça um algoritmo que leia informações de alunos (Matricula, Nota1, Nota2 ,Nota3)com o fim das informações indicado por Matricula = 9999.
+Para cada aluno deve ser calculada a média final de acordo com a seguinte fórmula:
+Média final = [(2 * Nota1) +(3* Nota2) +(4* Nota 3)] / 9
+Se a média final for igual ou superior a 5, o algoritmo deve mostrar Matrícula,
+Média Final e a mensagem "APROVADO"; se a média final for inferior a 5, o algoritmo deve mostrar Matricula, Média Final e a mensagem "REPROVADO".
+Ao final devem ser mostrados o total de aprovados, o total de alunos da turma e o total de reprovados.
+*/
+void While::mediaAluno(){
+    int matricula, nota1, nota2, nota3, qtdAprovados = 0, qtdReprovados = 0;
+    float media;
+
+    while(matricula != 9999){
+        cout << "\nInforme a matricula: ";
+        cin >> matricula;
+        cout << "Informe a nota 1: ";
+        cin >> nota1;
+        cout << "Informe a nota 2: ";
+        cin >> nota2;
+        cout << "Informe a nota 3: ";
+        cin >> nota3;
+
+        media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 4)) / 9;
+
+        if(media >= 5){
+            cout << "Matricula: " << matricula << " Media: " << media << " Status: Aprovado" << endl;
+            qtdAprovados++;
+        }else{
+            cout << "Matricula: " << matricula << " Media: " << media << " Status: Reprovado" << endl;
+            qtdReprovados++;
+        }
+    }
+
+    cout << "\nQuantidade Aprovados: " << qtdAprovados << endl;
+    cout << "Quantidade Reprovados: " << qtdReprovados << endl;
+}
+
+/*
+Faça um algoritmo que leia o número de andares de um prédio e, a seguir, para cada andar do prédio, leia o número de pessoas que entraram e saíram do elevador.
+Considere que o elevador está vazio e está subindo, os dados se referem a apenas uma “subida” do elevador e  que o número de pessoas dentro do elevador sempre será maior ou igual a 0.
+Se o número de pessoas, após a entrada e saída for maior que 15, deve ser mostrada a mensagem “EXCESSO DE PASSAGEIROS . DEVEM SAIR" em
+seguida, o número de pessoas que devem sair do elevador, de modo que seja obedecido o limite de 15 passageiros.
+Após a entrada de pessoas no último andar o algoritmo deve mostrar quantas pessoas irão descer.
+*/
+void While::andaresPredio(){
+    const int LIMITE = 15;
+    int qtdAndares, qtdEntra, qtdSai, devemDescer, qtdPessoas = 0, andar = 0;
+
+    cout << "Informe a quantidade de andares tem o predio: ";
+    cin >> qtdAndares;
+
+    while(andar < qtdAndares){
+        cout << "\nAndar " << andar << endl;
+        cout << "Quantidade de pessoa que entrarao: ";
+        cin >> qtdEntra;
+
+        qtdPessoas += qtdEntra;
+
+        if(andar > 0 && andar < qtdAndares -1 && qtdPessoas > 0){
+            cout << "Quantidade de pessoas que sairao: ";
+            cin >> qtdSai;
+
+            if(qtdSai > qtdPessoas){
+                qtdPessoas = 0;
+            }else{
+                qtdPessoas -= qtdSai;
+            }
+        }
+
+        if(qtdPessoas > LIMITE){
+            devemDescer = qtdPessoas - LIMITE;
+            cout << "EXCESSO DE PASSAGEIROS. DEVEM SAIR: " << devemDescer << endl;
+        }
+
+        andar++;
+    }
+
+    cout << "\nTotal de Pessoas que irao descer: " << qtdPessoas << endl;
 }

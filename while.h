@@ -20,6 +20,9 @@ class While{
         void idadeHabitantes();
         void menorQuadrado();
         void sequenciaFibonacci();
+        void pesquisaPopulacional();
+        void mediaAluno();
+        void andaresPredio();
 };
 
 #endif // WHILE_H_INCLUDED
