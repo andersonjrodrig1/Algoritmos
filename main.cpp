@@ -3,8 +3,14 @@
 #include "switch.h"
 #include "if.h"
 #include "while.h"
+#include "vetor.h"
 
 using namespace std;
+
+void executaMetodosVetor(){
+    Vetor v;
+    v.inverteVetor();
+}
 
 void executarMetodosWhile(){
     While w;
@@ -28,5 +34,6 @@ void executarMetodosIf(){
 
 int main()
 {
-    executarMetodosWhile();
+    executaMetodosVetor();
+    return 0;
 }

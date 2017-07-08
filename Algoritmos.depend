@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1498626477 source:d:\code blocks\c++\algoritmos\for.cpp
+1499482076 source:d:\code blocks\c++\algoritmos\for.cpp
 	"for.h"
 	<stdio.h>
 	<stdlib.h>
@@ -7,12 +7,13 @@
 
 1498622974 d:\code blocks\c++\algoritmos\for.h
 
-1499396225 source:d:\code blocks\c++\algoritmos\main.cpp
+1499525431 source:d:\code blocks\c++\algoritmos\main.cpp
 	<iostream>
 	"for.h"
 	"switch.h"
 	"if.h"
 	"while.h"
+	"vetor.h"
 
 1498535749 source:d:\code blocks\c++\algoritmos\if.cpp
 	"If.h"
@@ -33,7 +34,7 @@
 
 1498535981 d:\code blocks\c++\algoritmos\switch.h
 
-1499396500 source:d:\code blocks\c++\algoritmos\while.cpp
+1499474235 source:d:\code blocks\c++\algoritmos\while.cpp
 	"while.h"
 	<iostream>
 	<stdlib.h>
@@ -42,4 +43,12 @@
 	<math.h>
 
 1499392433 d:\code blocks\c++\algoritmos\while.h
+
+1499513701 d:\code blocks\c++\algoritmos\vetor.h
+
+1499477368 source:d:\code blocks\c++\algoritmos\vetor.cpp
+	"vetor.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
 

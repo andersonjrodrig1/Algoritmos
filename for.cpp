@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-/* Exercicio 88
-Some os números de 1 a 100 e imprima o valor.*/
+/*
+Some os números de 1 a 100 e imprima o valor.
+*/
 void For::somaNumeros(){
     int soma;
 
@@ -15,10 +16,11 @@ void For::somaNumeros(){
     printf("A soma e %i", soma);
 }
 
-/* Exercicio 89
+/*
 Construa um Algoritmo que, para um grupo de 50 valores inteiros, determine:
 a) A soma dos números positivos;
-b) A quantidade de valores negativos; */
+b) A quantidade de valores negativos;
+*/
 void For::grupoValores(){
     int valores[50] = {
         1,2,-2,10,38,9,-22,99,-99,20,-35,-40,-9,
@@ -42,8 +44,9 @@ void For::grupoValores(){
     printf("\nQuantidade de Negativos: %i\n", qtdNegativos);
 }
 
-/* Exercicio 90
-Faça um algoritmo que imprima os múltiplos positivos de 7, inferiores a 1000. */
+/*
+Faça um algoritmo que imprima os múltiplos positivos de 7, inferiores a 1000.
+*/
 void For::multiplosSete(){
     const int MAX = 1000;
 
@@ -54,9 +57,10 @@ void For::multiplosSete(){
     }
 }
 
-/* Exercicio 91
+/*
 Faça um algoritmo que imprima todos os números pares compreendidos entre
-85 e 907. O algoritmo deve também calcular a soma destes valores. */
+85 e 907. O algoritmo deve também calcular a soma destes valores.
+*/
 void For::imprimePares(){
     const int MAX = 907;
 
@@ -67,10 +71,11 @@ void For::imprimePares(){
     }
 }
 
-/* Exercicio 92
+/*
 Faça um algoritmo que calcule o valor de A, dado por:
 A = N + (N-1)/2 + (N-2)/3 + ... + 1/N,
-onde N é um número inteiro positivo. */
+onde N é um número inteiro positivo.
+*/
 void For::calculoValor(){
     int n = 0, div = 1;
     float a = 0;
@@ -86,13 +91,14 @@ void For::calculoValor(){
     printf("\nValor de A: %.0f\n", a);
 }
 
-/* Exercicio 93
+/*
 Uma rainha requisitou os serviços de um monge e disse-lhe que pagaria
 qualquer preço. O monge, necessitando de alimentos, indagou à rainha sobre o
 pagamento, se poderia ser feito com grãos de trigo dispostos em um tabuleiro de
 xadrez (que possui 64 casas), de tal forma que o primeiro quadro deveria conter
 apenas um grão e os quadros subsequentes, o dobro do quadro anterior. Crie um
-algoritmo para calcular o total de grãos que o monge recebeu. */
+algoritmo para calcular o total de grãos que o monge recebeu.
+*/
 void For::tabuleiro(){
     const int TAB = 64;
     long graos = 1;
@@ -156,7 +162,7 @@ int quintaInstrucao(){
     resto = valorA % valorB;
 }
 
-/* Exercicio 94
+/*
 Dado o conjunto de instruções a seguir, faça um algoritmo com quatro variações,
 colocando o comando de repetição adequadamente, de forma a:
 a) Executar o conjunto 10 vezes;
@@ -164,7 +170,8 @@ b) Não executar nenhuma vez;
 c) Executar o conjunto 100 vezes utilizando duas estruturas de repetição;
 d) Executar N vezes, onde N é uma variável informada pelo usuário.
 - Ler A, B
-- Modulo = A mod B (calcula o resto da divisão) */
+- Modulo = A mod B (calcula o resto da divisão)
+*/
 void For::conjuntoInstrucoes(){
     int mUm = primeiraInstrucao();
     int mDois = segundaInstrucao();
@@ -179,10 +186,11 @@ void For::conjuntoInstrucoes(){
     printf("\n5 instrucao: %i\n", mCinco);
 }
 
-/* Exercicio 95
+/*
 Para uma turma de 45 alunos, construa um algoritmo que determine:
 a) A idade média dos alunos com menos de 1,70m de altura;
-b) A altura média dos alunos com mais de 20 anos. */
+b) A altura média dos alunos com mais de 20 anos.
+*/
 void For::mediaTurma(){
     const int TURMA = 10;
     int contAltura = 0, contIdade = 0;
@@ -212,9 +220,10 @@ void For::mediaTurma(){
     printf("\nA media de altura de %i aluno(s) com altura menor que 1,72: %.2f\n", contAltura, mediaAltura);
 }
 
-/* Exercicio 96
+/*
 Escreva um algoritmo que calcule o produto dos inteiros ímpares de 1 a 15 e,
-então, exiba os resultados. */
+então, exiba os resultados.
+*/
 void For::produtoImpares(){
     const int MAX = 15;
     int produto = 1;
@@ -228,8 +237,9 @@ void For::produtoImpares(){
     printf("O produto dos impares entre 1 e %i: %i\n", MAX, produto);
 }
 
-/* exercicio 97
-Faça um algoritmo que leia um número e imprima a sua tabela de multiplicação de 1 até 13. */
+/*
+Faça um algoritmo que leia um número e imprima a sua tabela de multiplicação de 1 até 13.
+*/
 void For::tabelaNumero(){
     const int MAX = 13;
     int numero, produto;
@@ -242,9 +252,10 @@ void For::tabelaNumero(){
     }
 }
 
-/* exercicio 98
+/*
 Escreva um algoritmo que calcule os quadrados e cubos dos números de 0 a 10
-e imprima os valores resultantes no formato de tabela. */
+e imprima os valores resultantes no formato de tabela.
+*/
 void For::quadradoCubo(){
     const int MAX = 10;
 
@@ -255,10 +266,11 @@ void For::quadradoCubo(){
     }
 }
 
-/* Exercicio 99
+/*
 Faça um algoritmo que calcule a média de salários de uma empresa, pedindo ao
 usuário a quantidade de funcionários, o nome e o salário de cada funcionário e
-devolvendo a média, o salário mais alto e o salário mais baixo.*/
+devolvendo a média, o salário mais alto e o salário mais baixo.
+*/
 void For::mediaSalario(){
     const float SALARIO = 3000.00;
     int qtdFuncionarios, contSalAlto = 0, contSalBaixo = 0;
@@ -290,8 +302,9 @@ void For::mediaSalario(){
     printf("\nMedia salarios mais baixos: %.2f\n", mediaSalBaixos);
 }
 
-/* Exercicio 100
-Crie um programa que peça 10 números inteiros e apresente: a média, o maior e o menor. */
+/*
+Crie um programa que peça 10 números inteiros e apresente: a média, o maior e o menor.
+*/
 void For::mediaMaiorMenor(){
     const int MAX = 10;
     float media, soma = 0;
@@ -324,12 +337,13 @@ void For::mediaMaiorMenor(){
     printf("\nMenor numero: %i\n", menor);
 }
 
-/* Exercicio 101
+/*
 Escreva um algoritmo que determine o fatorial de um número. Para este
 problema, tem-se como entrada o valor do número do qual se deseja calcular o
 fatorial. O fatorial de 0 é igual a 1. O fatorial de um número N(N!) é definido
 conforme a seguir:
-N! = 1 * 2 * 3 * 4 * ... * (N-1) * N */
+N! = 1 * 2 * 3 * 4 * ... * (N-1) * N
+*/
 void For::fatorialNumero(){
     int numero, fat = 1;
 
@@ -345,14 +359,15 @@ void For::fatorialNumero(){
     printf("\nFatorial de %i: %li\n", numero, fat);
 }
 
-/*Exercicio 102
+/*
 102. Um hotel com 30 quartos cobra R$ 50,00 por diária e mais uma taxa de
 serviços. A taxa de serviços é de:
 • R$ 4,00 por diária, se o número de diárias for < 15;
 • R$ 3,60 por diária, se o número de diárias for = 15;
 • R$ 3,00 por diária, se o número de diárias for > 15.
 Faça um algoritmo que imprima o nome e o total da conta de cada cliente do hotel.
-Imprima também o total ganho pelo hotel. */
+Imprima também o total ganho pelo hotel.
+*/
 void For::contaHotel(){
     const float VALOR = 50.00;
     char nome[30];
@@ -379,10 +394,11 @@ void For::contaHotel(){
     printf("\nTotal da conta: %.2f\n", totalConta);
 }
 
-/* Exercicio 103
+/*
 Um determinado material radioativo perde metade de sua massa a cada 50
 segundos. Dada a massa inicial, em gramas, faça um programa que determine o
-tempo necessário para que essa massa se torne menor que 0,05 gramas. */
+tempo necessário para que essa massa se torne menor que 0,05 gramas.
+*/
 void For::perdaMassa(){
     const float MIN_MASSA = 0.05;
     float massa;
@@ -403,9 +419,10 @@ void For::perdaMassa(){
     printf("\nTempo que massa tornou menor que %.2f: %i:%i minutos.\n", MIN_MASSA, minuto, segundo);
 }
 
-/* Exercicio 104
+/*
 Sem utilizar a operação de multiplicação, escreva um programa que multiplique
-dois números inteiros. Por exemplo: 2 * 2 = 2 + 2. */
+dois números inteiros. Por exemplo: 2 * 2 = 2 + 2.
+*/
 void For::multiplicarSemMultiplicacao(){
     int result = 0, num1, num2;
 
@@ -421,10 +438,10 @@ void For::multiplicarSemMultiplicacao(){
     printf("\nResultado: %i\n", result);
 }
 
-/* Exercicio 105
-A série de Fibonacci é formada pela sequência:
-0, 1, 1, 2, 3, 5, 8, 13, 21, ...
-Construa um algoritmo que gere e mostre a série até o vigésimo termo. */
+/*
+A série de Fibonacci é formada pela sequência: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+Construa um algoritmo que gere e mostre a série até o vigésimo termo.
+*/
 void For::Fibonacci(){
     int numero, a = 0, b = 1, c = 0;
 

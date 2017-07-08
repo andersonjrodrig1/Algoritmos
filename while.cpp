@@ -599,13 +599,18 @@ void While::andaresPredio(){
     cin >> qtdAndares;
 
     while(andar < qtdAndares){
-        cout << "\nAndar " << andar << endl;
+        if(andar == 0){
+            cout << "\nTerreo " << endl;
+        }else{
+            cout << "\nAndar " << andar << endl;
+        }
+
         cout << "Quantidade de pessoa que entrarao: ";
         cin >> qtdEntra;
 
         qtdPessoas += qtdEntra;
 
-        if(andar > 0 && andar < qtdAndares -1 && qtdPessoas > 0){
+        if(andar > 0 && qtdPessoas > 0){
             cout << "Quantidade de pessoas que sairao: ";
             cin >> qtdSai;
 
@@ -625,5 +630,6 @@ void While::andaresPredio(){
         andar++;
     }
 
-    cout << "\nTotal de Pessoas que irao descer: " << qtdPessoas << endl;
+    cout << "\nAndar " << andar << endl;
+    cout << "Total de Pessoas que irao descer: " << qtdPessoas << endl;
 }
