@@ -40,6 +40,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="switch.cpp" />
 		<Unit filename="switch.h" />
+		<Unit filename="vetor.cpp" />
+		<Unit filename="vetor.h" />
 		<Unit filename="while.cpp" />
 		<Unit filename="while.h" />
 		<Extensions>

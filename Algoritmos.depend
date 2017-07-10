@@ -7,7 +7,7 @@
 
 1498622974 d:\code blocks\c++\algoritmos\for.h
 
-1499525431 source:d:\code blocks\c++\algoritmos\main.cpp
+1499647658 source:d:\code blocks\c++\algoritmos\main.cpp
 	<iostream>
 	"for.h"
 	"switch.h"
@@ -44,11 +44,12 @@
 
 1499392433 d:\code blocks\c++\algoritmos\while.h
 
-1499513701 d:\code blocks\c++\algoritmos\vetor.h
+1499647563 d:\code blocks\c++\algoritmos\vetor.h
 
-1499477368 source:d:\code blocks\c++\algoritmos\vetor.cpp
+1499650432 source:d:\code blocks\c++\algoritmos\vetor.cpp
 	"vetor.h"
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
 

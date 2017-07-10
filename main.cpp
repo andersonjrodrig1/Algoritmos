@@ -9,7 +9,7 @@ using namespace std;
 
 void executaMetodosVetor(){
     Vetor v;
-    v.inverteVetor();
+    v.somaMatrizCincoPorCinco();
 }
 
 void executarMetodosWhile(){

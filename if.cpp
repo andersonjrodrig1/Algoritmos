@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 
-/* Exercicio 31
+/*
 Faça um algoritmo que leia dois números A e B e imprima o maior deles. */
 void If::verificaMaior(){
     int num1, num2;
@@ -20,7 +20,7 @@ void If::verificaMaior(){
         printf("\n%i e o maior", num2);
 }
 
-/* Exercicio 32
+/*
 Faça um algoritmo que leia um número N e imprima “F1”, “F2” ou “F3”, conforme
 a condição:
 • “F1”, se N <= 10
@@ -40,7 +40,7 @@ void If::verificaNumero(){
         printf("\nF3");
 }
 
-/* Exercicio 33
+/*
 O sistema de avaliação de determinada disciplina, é composto por três provas. A
 primeira prova tem peso 2, a segunda tem peso 3 e a terceira tem peso 5. Faça
 um algoritmo para calcular a média final de um aluno desta disciplina. */
@@ -64,7 +64,7 @@ void If::mediaProva(){
     printf("\nA media e %f\n", media);
 }
 
-/* Exercicio 34
+/*
 Construa um algoritmo que receba como entrada três valores e os imprima em ordem crescente. */
 void ordemCrescente(){
     int valor1, valor2, valor3;
@@ -90,7 +90,7 @@ void ordemCrescente(){
         printf("\nOrdem Crescente: %i %i %i\n", valor3, valor1, valor2);
 }
 
-/* Exercicio 35
+/*
 Considere que o último concurso vestibular apresentou três provas: Português,
 Matemática e Conhecimentos Gerais. Considerando que para cada candidato
 tem-se um registro contendo o seu nome e as notas obtidas em cada uma das
@@ -129,7 +129,7 @@ void If::mediaNota(){
     printf("\nStatus: %s\n", status);
 }
 
-/* Exercicio 36
+/*
 Uma empresa de vendas tem três corretores. A empresa paga ao corretor uma
 comissão calculada de acordo com o valor de suas vendas. Se o valor da venda
 de um corretor for maior que R$ 50.000.00 a comissão será de 12% do valor
@@ -176,7 +176,7 @@ void If::comissaoEmpresa(){
     printf("Total de Vendas: %2.f\n", totalVendas);
 }
 
-/* Exercicio 37
+/*
 Escreva um algoritmo que determine o número de dias que uma pessoa já viveu.
 Considere que um mês tenha 30 dias. */
 void If::calculaDiasVida(){
@@ -194,7 +194,7 @@ void If::calculaDiasVida(){
     printf("\nDias Vivido: %i dias\n", diasVida);
 }
 
-/* Exercicio 38
+/*
 Faça um algoritmo que leia os valores A, B e C. Mostre uma mensagem que
 informe se a soma de A com B é menor, maior ou igual a C. */
 void If::mensagem(){
@@ -215,7 +215,7 @@ void If::mensagem(){
         printf("\nA soma de A mais B nao e maior que C\n");
 }
 
-/* Exercicio 39
+/*
 Suponha que um caixa disponha apenas de notas de 1, 10 e 100 reais.
 Considerando que alguém está pagando uma compra, escreva um algoritmo que
 mostre o número mínimo de notas que o caixa deve fornecer como troco. Mostre
@@ -261,7 +261,7 @@ void If::troco(){
     printf("\nQuantidade de Notas de 1: %i\n", qtdNotas1);
 }
 
-/* Exercicio 40
+/*
 Uma empresa produz três tipos de peças mecânicas: parafusos, porcas e
 arruelas. Têm-se os preços unitários de cada tipo de peça e sabe-se que sobre
 estes preços incidem descontos de 10% para porcas, 20% para parafusos e 30%
@@ -313,7 +313,7 @@ void If::compraPecasMecanicas(){
 
 }
 
-/* Exercicio 41
+/*
 A revendedora de carros Pica-Pau Ltda. paga aos seus funcionários vendedores
 dois salários mínimos fixos, mais uma comissão fixa de R$ 50,00 por carro
 vendido e mais 5% do valor das vendas. Faça um algoritmo que determine o
@@ -339,7 +339,7 @@ void If::revendedoraVeiculos(){
     printf("\nSalario Total: %.2f\n", salarioTotal);
 }
 
-/* Exercicio 42
+/*
 Uma pessoa comprou quatro artigos em uma loja. Para cada artigo, tem-se
 nome, preço e percentual de desconto. Faça um algoritmo que imprima nome,
 preço e preço com desconto de cada artigo e o total a pagar. */
@@ -380,7 +380,7 @@ void If::artigosCompra(){
     printf("\nTotal a pagar: %.2f\n", totalPagar);
 }
 
-/* Exercicio 43
+/*
 Uma empresa irá dar um aumento de salário aos seus funcionários de acordo
 com a categoria de cada empregado. O aumento seguirá a seguinte regra:
 • Funcionários das categorias A, C, F, e H ganharão 10% de aumento sobre o salário;
@@ -452,7 +452,7 @@ void If::categoriaFuncionario(){
     printf("\nNovo Salario: %.2f\n", novoSalario);
 }
 
-/* Exercicio 44
+/*
 Uma sorveteria vende três tipos de picolés. Sabendo-se que o picolé do tipo 1 é
 vendido por R$ 0.50, o do tipo 2 por R$ 0.60 e o do tipo 3 por R$ 0.75, faça um
 algoritmo que, para cada tipo de picolé, mostre a quantidade vendida e o total
@@ -484,7 +484,7 @@ void If::vendaPicole(){
     printf("\nTotal tipo 3: %.2f\n", totalTipo3);
 }
 
-/* Exercicio 45
+/*
 Escreva um algoritmo que, para uma conta bancária, leia o seu número, o saldo,
 o tipo de operação a ser realizada (depósito ou retirada) e o valor da operação.
 Após, determine e mostre o novo saldo. Se o novo saldo ficar negativo, deve ser
@@ -526,7 +526,7 @@ void If::contaBancaria(){
     printf("\nStatus: %s\n", mensagem);
 }
 
-/* Exercicio 46
+/*
 Um hotel cobra R$ 60.00 a diária e mais uma taxa de serviços. A taxa de
 serviços é de:
 • R$ 5.50 por diária, se o número de diárias for maior que 15;
@@ -558,7 +558,7 @@ void If::diariaHotel(){
     printf("\nTotal da Conta: %.2f\n", totalDiaria);
 }
 
-/* Exercicio 47
+/*
 Construir um algoritmo que tome como entradas três valores distintos e os
 apresente (imprima) em ordem crescente (menor para o maior). */
 void If::menorMaior(){
@@ -585,7 +585,7 @@ void If::menorMaior(){
         printf("\nOrdem Crescente: %i %i %i\n", valor3, valor1, valor2);
 }
 
-/* Exercicio 48
+/*
 Faça um algoritmo que leia 3 números inteiros distintos e escreva o menor deles. */
 void If::apresentaMenorValor(){
     int valor1, valor2, valor3;
@@ -605,7 +605,7 @@ void If::apresentaMenorValor(){
         printf("\nMenor Valor: %i\n", valor3);
 }
 
-/* Exercicio 49
+/*
 Dados três valores X, Y e Z, verificar se eles podem ser os comprimentos dos
 lados de um triângulo, e se forem, verificar se é um triângulo equilátero, isóscele
 ou escaleno. Se eles não formarem um triângulo, escrever uma mensagem.
@@ -639,7 +639,7 @@ void If::verificaTriangulo(){
     }
 }
 
-/* Exercicio 50
+/*
 Suponha que o conceito de um aluno seja determinado em função da sua nota.
 Suponha, também, que esta nota seja um valor inteiro na faixa de 0 a 100,
 conforme a seguinte faixa:
@@ -674,7 +674,7 @@ void If::conceitoAluno(){
     }
 }
 
-/* Exercicio 51
+/*
 Faça um algoritmo que leia dois números e mostre qual o maior dos dois. */
 void If::maiorNumeros(){
     int num1, num2;
@@ -691,7 +691,7 @@ void If::maiorNumeros(){
     }
 }
 
-/* Exercicio 52
+/*
 Faça um algoritmo que leia dois números e indique se são iguais ou se são
 diferentes. Mostre o maior e o menor (nesta sequência). */
 void If::iguaisDiferentes(){
@@ -715,7 +715,7 @@ void If::iguaisDiferentes(){
     }
 }
 
-/* Exercicio 53
+/*
 Faça um algoritmo que leia três números e mostre-os em ordem decrescente. */
 void If::ordemDecrescente(){
     int valor1, valor2, valor3;
@@ -741,7 +741,7 @@ void If::ordemDecrescente(){
         printf("\nOrdem Decrescente: %i %i %i\n", valor3, valor1, valor2);
 }
 
-/* Exercicio 54
+/*
 Faça um algoritmo que leia quatro números (Opção , Num1 , Num2 e Num3) e
 mostre o valor de Num1 se Opção for igual a 2; o valor de Num2 se Opção for
 igual a 3; e o valor de Num3 se Opção for igual a 4. Os únicos valores possíveis
@@ -775,7 +775,7 @@ void If::opcaoNumero(){
 
 }
 
-/* Exercicio 55
+/*
 Calcule a média aritmética das três notas de um aluno e mostre, além do valor
 da média, uma mensagem de "Aprovado", caso a média seja igual ou superior a
 7; a mensagem “em prova final” caso a média seja menor que 7 e maior ou igual
@@ -806,7 +806,7 @@ void If::mediaAluno(){
     printf("\n%s\n", status);
 }
 
-/* Exercicio 56
+/*
 Elaborar um algoritmo que lê três valores a, b, c e os escreve. A seguir, encontre
 o maior dos três valores e o escreva com a mensagem : "É o maior”. */
 void If::leituraNumeros(){
@@ -832,7 +832,7 @@ void If::leituraNumeros(){
     }
 }
 
-/* Exercicio 57
+/*
 Elaborar um algoritmo que lê dois valores a e b e os escreve com a mensagem:
 “São múltiplos” ou “Não são múltiplos”. */
 void If::multiplos(){
@@ -859,7 +859,7 @@ void If::multiplos(){
     }
 }
 
-/* Exercicio 58
+/*
 Escreva um algoritmo que leia o código de um aluno e suas três notas. Calcule a
 média ponderada do aluno, considerando que o peso para a maior nota seja 4 e
 para as duas restantes, 3. Mostre o código do aluno, suas três notas, a média
@@ -902,7 +902,7 @@ void If::mediaPonderada(){
     printf("\nAluno foi %s\n", status);
 }
 
-/* Exercicio 59
+/*
 Faça um algoritmo que leia um número inteiro e mostre uma mensagem
 indicando se este número é par ou ímpar e se é positivo ou negativo. */
 void If::verificaParImpar(){
@@ -928,7 +928,7 @@ void If::verificaParImpar(){
     printf("\nNumero %s\n", tpNum2);
 }
 
-/* Exercicio 60
+/*
 O cardápio de uma lanchonete é o seguinte:
 Especificação Preço unitário
 100 Cachorro quente 1,10
@@ -988,7 +988,7 @@ void If::cardapio(){
     printf("\nTotal do pedido: %.2f\n", total);
 }
 
-/* Exercicio 61
+/*
 Um usuário deseja um algoritmo pelo qual possa escolher que tipo de média
 deseja calcular a partir de três notas. Faça um algoritmo que leia as notas, a
 opção escolhida pelo usuário e calcule a média:
@@ -1027,7 +1027,7 @@ void If::escolhaMedia(){
     printf("\nMedia das notas: %.2f\n", media);
 }
 
-/* Exercicio 62
+/*
 62. Um banco concederá um crédito especial aos seus clientes, variável com o saldo
 médio no último ano. Faça um algoritmo que leia o saldo médio de um cliente e
 calcule o valor do crédito de acordo com a tabela abaixo. Mostre uma mensagem
@@ -1060,7 +1060,7 @@ void If::saldoMedio(){
     printf("\nValor de Credito: %.2f\n", totalCredito);
 }
 
-/* Algoritmo 63
+/*
 Um vendedor necessita de um algoritmo que calcule o preço total devido por um
 cliente. O algoritmo deve receber o código de um produto e a quantidade
 comprada e calcular o preço total, usando a tabela abaixo:
@@ -1123,7 +1123,7 @@ void If::saldoDevedor(){
     printf("\nTotal a pagar: %.2f\n", totalPagar);
 }
 
-/* Algoritmo 64
+/*
 Um vendedor precisa de um algoritmo que calcule o preço total devido por um
 cliente. O algoritmo deve receber o código de um produto e a quantidade
 comprada e calcular o preço total, usando a tabela abaixo. Mostre uma
@@ -1181,7 +1181,7 @@ void If::saldoDevedor2(){
     printf("\nPreco Total: %.2f\n", precoTotal);
 }
 
-/* Exercicio 65
+/*
 Crie um algoritmo em que o aluno digita duas notas bimestrais e informa se o
 aluno foi aprovado ou não. Nota: Considere aprovado se a nota for maior que 5.0. */
 void If::notasBimestrais(){
@@ -1202,7 +1202,7 @@ void If::notasBimestrais(){
     }
 }
 
-/* Exercicio 66
+/*
 Escreva um algoritmo que leia dois números inteiros e determine qual é o menor
 e qual é o maior também. */
 void If::maiorMenor(){
@@ -1222,7 +1222,7 @@ void If::maiorMenor(){
     }
 }
 
-/* Exercicio 67
+/*
 Crie o algoritmo Funcionario para calcular o aumento salarial de um empregado.
 Por padrão, o aumento será de 15%. Entretanto, deve ser aplicada uma regra
 diferente para cada faixa salarial. Regras:
@@ -1251,7 +1251,7 @@ void If::salarioFuncionario(){
     printf("\nNovo salario: %.2f\n", novoSalario);
 }
 
-/* Exercicio 68
+/*
 Crie um algoritmo que calcula o desconto previdenciário de um funcionário. Dado
 um salário, o programa deve retornar o valor do desconto proporcional ao
 mesmo. O cálculo segue a regra: o desconto é de 11% do valor do salário,
@@ -1273,7 +1273,7 @@ void If::salarioPrevidenciario(){
     printf("\nValor desconto: %.2f\n", desconto);
 }
 
-/* xercicio 69
+/*
 Crie um algoritmo chamado Zodiaco. Este algoritmo deve ler a data do seu
 aniversário e atribuir um valor para a variável inteira chamada signo, conforme
 lista abaixo:
@@ -1342,7 +1342,7 @@ void If::zoodiaco(){
     printf("\nVoce e do seguinte signo do zodiaco: %s\n", signo);
 }
 
-/* Exercicio 70
+/*
 Crie um algoritmo que retorne verdadeiro quando um número fornecido for par. */
 void If::verdadeiro(){
     int numero;
@@ -1355,7 +1355,7 @@ void If::verdadeiro(){
     }
 }
 
-/* Exercicio 71
+/*
 Crie um algoritmo que peça o nome, a altura e o peso de duas pessoas e
 apresente o nome da mais pesada e o nome da mais alta. */
 void If::verificaPessoa(){
